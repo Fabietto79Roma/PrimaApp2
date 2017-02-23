@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { Santo } from '../../models/santo';
+
 
 /*
   Generated class for the SaintDetail page.
@@ -13,7 +15,7 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class SaintDetailPage {
 
-  santo: any[]; 
+  santo: Santo; 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
 
     this.santo= this.navParams.get('item');
